@@ -42,6 +42,10 @@ class NavMeshCell:
     def polygon(self) -> shapely.Polygon:
         return self._polygon
 
+    @property
+    def id(self) -> int:
+        return self._id
+
 
 class NavMesh:
 
